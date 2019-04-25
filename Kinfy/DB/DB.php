@@ -198,9 +198,19 @@ class DB
         if(!$r) {
            print_r($pdosmt->errorInfo());
         }
+        $this->clear();
         return $pdosmt->fetchAll();
     }
+public function clear()
+{
 
+    $this->fields = [];
+    $this->where = [];
+    $this->table = [];
+    $this->limit = [];
+    $this->sql = [];
+    $this->join = [];
+ }
 
 }
 
