@@ -7,7 +7,7 @@
  */
 namespace App\Controller;
 
-class UserController
+class UserController extends BaseController
 {
 
     public function index()
@@ -19,6 +19,10 @@ class UserController
         echo 'user add';
     }
 
+    public function addasd()
+    {
+        echo 'user add';
+    }
 
 
 }
